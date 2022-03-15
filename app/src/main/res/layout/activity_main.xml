@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/Fila6"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/Fila1"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="6dp">
+
+        <Button
+            android:id="@+id/SimboloMult"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="*"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/SimboloDiv"
+
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="/"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/SimboloLN"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="ln"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/SimboloFact"
+
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="n!"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#00FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Fila1"
+        android:layout_width="400dp"
+        android:layout_height="94dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/Fila2"
+        app:layout_constraintTop_toBottomOf="@+id/Fila6"
+        tools:layout_editor_absoluteX="5dp">
+
+        <Button
+            android:id="@+id/Numero1"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:fontFamily="sans-serif-black"
+            android:onClick="onClick"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:backgroundTint="#00FFFFFF"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="420dp" />
+
+        <Button
+            android:id="@+id/Numero2"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="2"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:backgroundTint="#00FFFFFF"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="433dp" />
+
+        <Button
+            android:id="@+id/Numero3"
+
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="3"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:backgroundTint="#00FFFFFF"
+            tools:layout_editor_absoluteX="194dp"
+            tools:layout_editor_absoluteY="433dp" />
+
+        <Button
+            android:id="@+id/simboloRest"
+
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="-"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
+            app:backgroundTint="#00FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Fila2"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/Fila3"
+        app:layout_constraintTop_toBottomOf="@+id/Fila1"
+        tools:layout_editor_absoluteX="5dp">
+
+        <Button
+            android:id="@+id/Numero4"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="4"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:backgroundTint="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/Numero5"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="5"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:backgroundTint="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/Numero6"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="6"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:backgroundTint="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/simboloSum"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="+"
+            android:textColor="#2196F3"
+            android:textSize="24sp"
+            app:backgroundTint="#00FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Fila3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/Fila4"
+        app:layout_constraintTop_toBottomOf="@+id/Fila2"
+        tools:layout_editor_absoluteX="5dp">
+
+        <Button
+            android:id="@+id/Numero7"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="7"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:backgroundTint="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/Numero8"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="8"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:backgroundTint="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/Numero9"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="9"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:backgroundTint="#00FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Fila4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fila3"
+        tools:layout_editor_absoluteX="5dp">
+
+        <Button
+            android:id="@+id/SimboloSQRT"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="Raiz"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#00FFFFFF"
+            app:iconTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/Numero0"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#00FFFFFF"
+            app:iconTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/SimboloDec"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#00FFFFFF"
+            app:iconTint="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Fila5"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/Fila3"
+        app:layout_constraintTop_toBottomOf="@+id/Fila2">
+
+        <Button
+            android:id="@+id/SimboloEQL"
+            android:layout_width="99dp"
+            android:layout_height="215dp"
+            android:fontFamily="sans-serif-black"
+            android:text="="
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:backgroundTint="#2196F3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="288dp"
+        android:layout_height="71dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="35dp">
+
+        <TextView
+            android:id="@+id/Result"
+            android:layout_width="297dp"
+            android:layout_height="77dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Del"
+        android:layout_width="92dp"
+        android:layout_height="67dp"
+        android:text="C"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:backgroundTint="#2196F3"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
